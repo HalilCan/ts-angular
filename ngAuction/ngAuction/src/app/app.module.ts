@@ -12,6 +12,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { SearchComponent } from './search/search.component';
 import { StarsComponent } from './stars/stars.component';
 
+import { ProductService } from './shared/product.service';
+
 @NgModule({
   declarations: [
     AppComponent,
