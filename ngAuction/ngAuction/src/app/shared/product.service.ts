@@ -66,11 +66,10 @@ function generateNProducts(count: number): Array<Product> {
 
     let categories: string[] = [];
     for (let cat of defaultCategories) {
-      if (Math.random() > .33) {
+      if (Math.random() < .30) {
         categories.push(cat);
       }
     }
-    console.log(categories);
 
     products.push(new Product(id, title,
       price, rating, description, categories));
