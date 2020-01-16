@@ -1,4 +1,4 @@
-<div class="thumbnail">
+<!--<div class="thumbnail">
     <img src="http://placehold.it/820x320">
     <div>
         <h4 class="float-right">{{ product.price }}</h4>
@@ -10,4 +10,17 @@
             <nga-stars [rating]="product.rating"></nga-stars>
         </p>
     </div>
-</div>
+</div> -->
+
+<mat-card>
+    <img mat-card-image src="http://placehold.it/820x320">
+    <mat-card-content>
+        <h4>{{ product.title }}</h4>
+        <h4 class="float-right">{{product.price | currency}}</h4>
+        {{product.description}}
+        <nga-stars [rating]="product.rating"></nga-stars>
+    </mat-card-content>
+    <mat-card-actions>
+       
+    </mat-card-actions>
+</mat-card>
